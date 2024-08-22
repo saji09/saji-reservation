@@ -7,7 +7,7 @@
   "routes": [
       {
           "src": "/(.*)",
-          "dist": "/public/index.php"
+          "dest": "public/index.php"
       }
   ],
   "env": {
