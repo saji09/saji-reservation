@@ -2,18 +2,18 @@
   "version": 2,
   "framework": null,
   "functions": {
-      "api/index.php": { "runtime": "vercel-php@0.6.0" }
+      "public/index.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
       {
           "src": "/(.*)",
-          "dest": "/api/index.php"
+          "dest": "/public/index.php"
       }
   ],
   "env": {
       "APP_ENV": "production",
       "APP_DEBUG": "true",
-      "APP_URL": "https://your.url.from.vercel.app",
+      "APP_URL": "https://localhost.from.vercel.app",
       "APP_KEY": "base64:4yVlgBTrcMmF0dTo5sN5l7ororf7JDSsygxWCsdtP04=",
       "APP_CONFIG_CACHE": "/tmp/config.php",
       "APP_EVENTS_CACHE": "/tmp/events.php",
