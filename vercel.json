@@ -1,15 +1,16 @@
 {
+    "version": 2,
     "builds": [
       {
         "src": "public/**/*",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "public"
-        }
+        "use": "@vercel/php"
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/public/$1" }
+      {
+        "src": "/(.*)",
+        "dest": "/public/$1"
+      }
     ]
   }
   
